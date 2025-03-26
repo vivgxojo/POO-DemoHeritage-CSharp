@@ -20,3 +20,13 @@ catch (PersonneException ex)
     Console.WriteLine(ex);
     //Console.WriteLine(ex.Message);
 }
+Console.WriteLine();
+List<Personne> personnes = new List<Personne>();
+personnes.Add(etudiant);
+personnes.Add(etudiant2);
+Personne personne = new Personne() { FirstName="Maryse", LastName="Mongeau" };
+personnes.Add(personne);
+foreach (Personne p in personnes)
+{
+    Console.WriteLine(p);
+}
